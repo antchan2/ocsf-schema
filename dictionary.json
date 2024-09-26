@@ -450,6 +450,16 @@
       "description": "The number of bytes sent from the source to the destination.",
       "type": "long_t"
     },
+    "bytes_read_disk": {
+      "caption": "Bytes Read from Disk",
+      "description": "The number of bytes read from disk.",
+      "type": "long_t"
+    },
+    "bytes_written_disk": {
+      "caption": "Bytes Written to Disk",
+      "description": "The number of bytes written to disk.",
+      "type": "long_t"
+    },
     "capabilities": {
       "caption": "Capabilities",
       "description": "A list of RDP capabilities.",
@@ -1210,6 +1220,11 @@
       "type": "cvss",
       "is_array": true
     },
+    "cwd": {
+      "caption": "Current Working Directory",
+      "description": "The current working directory of a process. If the current working directory is unavailable or missing, the empty string <code>''</code> is to be used.",
+      "type": "string_t"
+    },
     "cwe": {
       "caption": "CWE",
       "description": "The CWE object represents a weakness in a software system that can be exploited by a threat actor to perform an attack. The CWE object is based on the <a target='_blank' href='https://cwe.mitre.org/'>Common Weakness Enumeration (CWE)</a> catalog.",
@@ -1764,6 +1779,11 @@
       "caption": "OS Edition",
       "description": "The operating system edition. For example: <code>Professional</code>.",
       "type": "string_t"
+    },
+    "elapsed_time": {
+      "caption": "Elapsed Time",
+      "description": "The elapsed time span of an activity.",
+      "type": "timespan"
     },
     "email": {
       "caption": "Email",
@@ -2476,6 +2496,11 @@
     "is_new_logon": {
       "caption": "New Logon",
       "description": "Indicates logon is from a device not seen before or a first time account logon.",
+      "type": "boolean_t"
+    },
+    "is_on_disk": {
+      "caption": "On Disk",
+      "description": "The indication of whether the item exists on disk.",
       "type": "boolean_t"
     },
     "is_on_premises": {
