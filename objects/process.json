@@ -37,6 +37,10 @@
       "description": "Environment variables associated with the process.",
       "requirement": "optional"
     },
+    "env_vars_actual_count": {
+      "description": "The actual count of environment variables associated with the process. A count larger than the number of variables specified in the <code>environment_variables</code> array indicates the process environment had more variables than had been recorded.",
+      "requirement": "optional"
+    },
     "file": {
       "description": "The process file object.",
       "requirement": "recommended"

@@ -1854,6 +1854,11 @@
       "type": "environment_variable",
       "is_array": true
     },
+    "env_vars_actual_count": {
+      "caption": "Environment Variables Actual Count",
+      "description": "The actual count of environment variables.",
+      "type": "integer_t"
+    },
     "epoch": {
       "caption": "Epoch",
       "description": "The software package epoch. Epoch is a way to define weighted dependencies based on version numbers.",
