@@ -53,6 +53,13 @@ Thankyou! -->
     4. Added `forward_addr` as an `email_t`. #1179
     5. Added `related_cves`, `related_cwes` as arrays of `cve`, `cwe` respectively. #1176
     6. Added `exploit_last_seen_time` as a `timestamp_t`. #1176
+    7. Added `bytes_read_disk` as a `long_t`.
+    8. Added `bytes_written_disk` as a `long_t`.
+    9. Added `cwd` as a `string_t`.
+    10. Added `elapsed_time` as a `timespan`.
+    11. Added `is_on_disk` as a `boolean_t`.
+    12. Added `env_vars_actual_count` as a `integer_t`.
+
 * #### Objects
     1. Added `environment_variable` object. #1172
     2. Added `advisory` object. #1176
@@ -70,6 +77,12 @@ Thankyou! -->
     7. Added `src_url` to the `cvss` object. #1176
     8. Added `advisory`, `exploit_last_seen_time` to the `vulnerability` object. #1176
     9. Added `related_cwes` to the `cve` object. #1176
+    10. Added `bytes_read_disk` to the `process` object.
+    11. Added `bytes_written_disk` to the `process` object.
+    12. Added `cwd` to the `process` object.
+    13. Added `elapsed_time` to the `process` object.
+    14. Added `is_on_disk` to the `process` object.
+    15. Added `env_vars_actual_count` to the `process` object.
 
 ### Bugfixes
 1. Added sibling definition to `confidence_id` in dictionary, accurately associating `confidence` as its sibling. #1180
