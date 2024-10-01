@@ -30,7 +30,7 @@
       "requirement": "recommended"
     },
     "elapsed_time": {
-      "description": "The amount of time that the process has been running",
+      "description": "The amount of time that the process has been running.",
       "requirement": "optional"
     },
     "environment_variables": {

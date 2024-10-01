@@ -58,7 +58,7 @@ Thankyou! -->
     9. Added `cwd` as a `string_t`.
     10. Added `elapsed_time` as a `timespan`.
     11. Added `is_on_disk` as a `boolean_t`.
-    12. Added `env_vars_actual_count` as a `integer_t`.
+    12. Added `env_vars_actual_count` as an `integer_t`.
 
 * #### Objects
     1. Added `environment_variable` object. #1172
