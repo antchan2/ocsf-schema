@@ -1,0 +1,14 @@
+{
+    "caption": "Process Statistics",
+    "description": "Resource usage and other statistics for the process.",
+    "extends": "object",
+    "name": "process_statistics",
+    "attributes": {
+        "bytes_written_disk": {
+            "requirement": "optional"
+        },
+        "bytes_read_disk": {
+            "requirement": "optional"
+        }
+    }
+}
