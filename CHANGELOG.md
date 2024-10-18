@@ -60,6 +60,8 @@ Thankyou! -->
     11. Added `body_length` as an `integer_t` #1200
     12. Added `is_public` as a `boolean_t` #1208
     13. Added `tags` as n array of `tag` object. #1207
+    14. Added `is_name_truncated` and `is_value_truncated` as `boolean_t`s.
+    15. Removed `is_attribute_truncated`
 * #### Objects
     1. Added `environment_variable` object. #1172
     2. Added `advisory` object. #1176
@@ -90,6 +92,8 @@ Thankyou! -->
     16. Added `body_length` to the `http_response` and `http_request` objects. #1200
     17. Added `is_public` to the `databucket` object. #1208
     18. Added `tags` to the `account`, `container`, `image`, `ldap_person`, `metadata`, `resource_details`, `service`, `web_resource` objects. #1207
+    19. Removed `is_attribute_truncated` from the `environment_variable` object. 
+    20. Added `is_name_truncated` and `is_value_truncated` to `environment_variable` object.
 
 
 ### Bugfixes
