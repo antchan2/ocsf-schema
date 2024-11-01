@@ -72,6 +72,7 @@ Thankyou! -->
     1. Added `group_provisioning_enabled`, `scim_group_schema`, `user_provisioning_enabled`, `scim_user_schema`, `scopes`, `idle_timeout`, `login_endpoint`, `logout_endpoint`, and `metadata_url` entries to the dictionary to support the new `scim` and `sso` objects. #1239
     1. Added new `11: Basic Authentication` enum value to `auth_protocol_id`. #1239
     1. Added `is_virtual` as a `boolean_t`.
+    1. Added `win_machine_guid` as a `uuid_t` in the Windows extension.
 * #### Objects
     1. Added `environment_variable` object. #1172
     1. Added `advisory` object. #1176
@@ -81,6 +82,7 @@ Thankyou! -->
     1. Added `discovery_details`, `encryption_details`, `occurrence_details` objects. #1245
     1. Added `scim` object. #1239
     1. Added `sso` object. #1239
+    1. Added `win_machine_guid` to `device` object.
 
 ### Improved
 * #### Event Classes
