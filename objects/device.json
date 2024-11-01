@@ -65,6 +65,10 @@
     "is_trusted": {
       "requirement": "optional"
     },
+    "is_virtual": {
+      "description": "Indicates the device is a virtual machine.",
+      "requirement": "optional"
+    },
     "last_seen_time": {
       "description": "The most recent discovery time of the device.",
       "requirement": "optional"
