@@ -72,6 +72,7 @@ Thankyou! -->
     1. Added `group_provisioning_enabled`, `scim_group_schema`, `user_provisioning_enabled`, `scim_user_schema`, `scopes`, `idle_timeout`, `login_endpoint`, `logout_endpoint`, and `metadata_url` entries to the dictionary to support the new `scim` and `sso` objects. #1239
     1. Added new `11: Basic Authentication` enum value to `auth_protocol_id`. #1239
     1. Added `is_virtual` as a `boolean_t`.
+    1. Added `linux_machine_id` as a `uuid_t` in the Linux extension.
     1. Added `win_machine_guid` as a `uuid_t` in the Windows extension.
 * #### Objects
     1. Added `environment_variable` object. #1172
@@ -82,7 +83,6 @@ Thankyou! -->
     1. Added `discovery_details`, `encryption_details`, `occurrence_details` objects. #1245
     1. Added `scim` object. #1239
     1. Added `sso` object. #1239
-    1. Added `win_machine_guid` to `device` object.
 
 ### Improved
 * #### Event Classes
@@ -123,8 +123,8 @@ Thankyou! -->
     1. Added `discovery_details`, `occurrence_details`, `status` trio, `total`, `uid`, `size`, & `src_url` to the `data_classification` object. #1245
     1. `data_bucket` object now inherits `resource_details` instead of `_entity`. Also, added `encryption_details` object to the `data_bucket` object. #1245
     1. Added `auth_factors`, `domain`, `fingerprint`, `has_mfa`, `issuer`, `protocol_name`, `scim`, `sso`, `state`, `state_id`, `tenant_uid`, and `uid` to `idp`. #1239
-    1. Added `is_virtual` to `device`.
-    1. Added `uuid` to `device_hw_info`.
+    1. Added `linux_machine_id`, `win_machine_guid` and `is_virtual` to the `device` object.
+    1. Added `uuid` to the `device_hw_info` object.
 
 ### Bugfixes
 1. Added sibling definition to `confidence_id` in dictionary, accurately associating `confidence` as its sibling. #1180
