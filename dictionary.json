@@ -4798,6 +4798,27 @@
       "type": "string_t",
       "is_array": true
     },
+    "uid_source": {
+      "caption": "Unique ID Source",
+      "description": "The source for the unique identifier. See specific usage.",
+      "sibling": "uid_source_name",
+      "type": "integer_t",
+      "enum": {
+        "0": {
+          "caption": "Unknown",
+          "description": "The source for the UID is unknown."
+        },
+        "99": {
+          "caption": "Other",
+          "description": "The source for the UID is not mapped. See the <code>uid_source_name</code> attribute, which contains a data source specific value."
+        }
+      }
+    },
+    "uid_source_name": {
+      "caption": "Unique ID Source Name",
+      "description": "The source for the unique identifier, as defined by the uid_source.",
+      "type": "string_t"
+    },
     "unmanned_aerial_system": {
       "caption": "Unmanned Aerial System",
       "description": "The Unmanned Aerial System object describes the characteristics, Position Location Information (PLI), and other metadata of Unmanned Aerial Systems (UAS) and other unmanned and drone systems used in Remote ID. Remote ID is defined in the Standard Specification for Remote ID and Tracking (ASTM Designation: F3411-22a) <a target='_blank' href='https://cdn.standards.iteh.ai/samples/112830/71297057ac42432880a203654f213709/ASTM-F3411-22a.pdf'>ASTM F3411-22a</a>.",

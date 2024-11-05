@@ -117,6 +117,35 @@
       "description": "The unique identifier of the device. For example the Windows TargetSID or AWS EC2 ARN.",
       "requirement": "recommended"
     },
+    "uid_source": {
+      "description": "The source for the device unique identifier <code>uid</code>.",
+      "requirement": "optional",
+      "enum": {
+        "0": {
+          "caption": "Unknown",
+          "description": "The source for the UID is unknown."
+        },
+        "1": {
+          "caption": "Windows Target SID",
+          "description": "The UID is the Windows Target Security Identifier (SID)."
+        },
+        "2": {
+          "caption": "AWS ARN",
+          "description": "The UID is the Amazon Resource Name (ARN)."
+        },
+        "3": {
+          "caption": "OCSF Device ID",
+          "description": "The UID is the OCSF Device ID."
+        },
+        "99": {
+          "caption": "Other",
+          "description": "The source for the UID is not mapped. See the <code>uid_source_name</code> attribute, which contains a data source specific value."
+        }
+      }
+    },
+    "uid_source_name": {
+      "requirement": "optional"
+    },
     "uid_alt": {
       "description": "An alternate unique identifier of the device if any. For example the ActiveDirectory DN.",
       "requirement": "optional"
