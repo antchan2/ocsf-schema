@@ -2673,11 +2673,6 @@
       "description": "Indicates whether user provisioning is automated (e.g., for a SCIM resource). See specific usage.",
       "type": "boolean_t"
     },
-    "is_virtual": {
-      "caption": "Virtual",
-      "description": "Indicates if the entity is virtual. See specific usage.",
-      "type": "boolean_t"
-    },
     "is_vpn": {
       "caption": "VPN Session",
       "description": "The indication of whether the session is a VPN session.",
