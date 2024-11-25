@@ -45,7 +45,7 @@
       "requirement": "optional"
     },
     "uuid": {
-      "description": "The device manufacturer assigned universally unique hardware identifier. Unlike <code>serial_number</code>, this value is typically not marketed to end users and is not accessible on the exterior of the device. It is often associated with device's main board. On PC devices it is the BIOS UUID whereas on Mac devices, it is the IOPlatformUUID. Universal uniqueness is not guaranteed as the value is sometimes not programmed and assignment practices varies among hardware vendors. This value may also be arbitrarily set in virtual machines. Other device identifiers should be considered in addition when unique device identification is required.",
+      "description": "The device manufacturer assigned universally unique hardware identifier. For example: The BIOS System UUID or the Apple IOPlatformUUID.",
       "requirement": "optional"
     },
     "vendor_name": {
