@@ -4,13 +4,22 @@
     "extends": "object",
     "name": "environment_variable",
     "attributes": {
-        "variable_name": {
-            "description": "The name of the environment variable. Note that some operating systems permit environment variables to have very long names.",
+        "name": {
+            "caption": "Name",
+            "description": "The name of the environment variable. For very long names, a <code>name_truncated</code> label indicates truncation.",
+            "type": "string_t",
             "requirement": "required"
         },
-        "variable_value": {
-            "description": "The value of the environment variable. Note that some operating systems permit environment variables to have very long values.",
+        "value": {
+            "caption": "Value",
+            "description": "The value of the environment variable. For very long values, a <code>value_truncated</code> label indicates truncation.",
+            "type": "string_t",
             "requirement": "required"
+
+        },
+        "labels": {
+            "description": "Annotation. Defined values are: <code>name_truncated</code> and <code>value_truncated</code>.",
+            "requirement": "optional"
         }
     }
 }
