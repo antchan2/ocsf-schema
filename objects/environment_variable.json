@@ -5,15 +5,11 @@
     "name": "environment_variable",
     "attributes": {
         "name": {
-            "caption": "Name",
             "description": "The name of the environment variable. For very long names, a <code>name_truncated</code> label indicates truncation.",
-            "type": "string_t",
             "requirement": "required"
         },
         "value": {
-            "caption": "Value",
             "description": "The value of the environment variable. For very long values, a <code>value_truncated</code> label indicates truncation.",
-            "type": "string_t",
             "requirement": "required"
 
         },
