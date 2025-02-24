@@ -50,8 +50,11 @@
       "description": "The device manufacturer serial number.",
       "requirement": "optional"
     },
+    "apple_udid": {
+      "requirement": "optional"
+    },
     "uuid": {
-      "description": "The device manufacturer assigned universally unique hardware identifier. For example: The BIOS System UUID or the Apple IOPlatformUUID.",
+      "description": "The device manufacturer assigned universally unique hardware identifier. It is the System UUID for <a href='https://www.dmtf.org/standards/smbios'>SMBIOS</a> compatible devices. It is the Hardware UUID (<code>IOPlatformUUID</code>) for macOS devices.",
       "requirement": "optional"
     },
     "vendor_name": {

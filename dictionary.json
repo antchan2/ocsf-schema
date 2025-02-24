@@ -5496,10 +5496,10 @@
       "type": "string_t",
       "is_array": true
     },
-    "udid": {
-      "caption": "Unique Device Identifier",
-      "description": "The Unique Device Identifier, used for iOS and macOS devices.",
-      "type": "string_t"
+    "apple_udid": {
+      "caption": "UDID",
+      "description": "The Apple assigned <a href='https://theapplewiki.com/wiki/UDID'>Unique Device Identifier</a> (UDID). It is the UDID for iOS, iPadOS, tvOS, watchOS, and visionOS devices. It is the Provisioning UDID in macOS devices.",
+      "type": "apple_udid_t"
     },
     "uid": {
       "caption": "Unique ID",
@@ -5746,6 +5746,13 @@
     "caption": "Data Types",
     "description": "The data types available in OCSF. Each data type specifies constraints in the form regular expressions, max lengths or value limits. Implementors of OCSF should ensure they abide to these constraints.",
     "attributes": {
+      "apple_udid_t": {
+        "caption": "Apple UDID",
+        "description": "Apple <a href='https://theapplewiki.com/wiki/UDID'>Unique Device Identifier</a>. For example:<br><code>9f9bb1b742882152fb1746aab7db415cea979232</code> in the legacy 40 characters format, <code>00008020-008D4548007B4F26</code> in the current 24+1 characters format",
+        "regex": "[0-9a-fA-F]{40}|[0-9a-fA-F]{8}-[0-9a-fA-F]{16}",
+        "type": "string_t",
+        "type_name": "String"
+      },
       "boolean_t": {
         "caption": "Boolean",
         "description": "Boolean value. One of <code>true</code> or <code>false</code>.",
