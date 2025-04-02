@@ -3808,7 +3808,7 @@
     },
     "os_machine_uuid": {
       "caption": "OS Machine UUID",
-      "description": "The operating system assigned Machine ID. In Windows, this is the value stored at the registry path: <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography\\MachineGuid</code>. In Linux, this is stored in the file: <code>/etc/machine-id</code>.",
+      "description": "The operating system assigned Machine ID. In Windows, this is the value stored at the registry path: <code>HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Cryptography\\MachineGuid</code>. In Linux, this is stored in the file: <code>/etc/machine-id</code>. Add hyphens when necessary to create a valid UUID.",
       "type": "uuid_t"
     },
     "osint": {
