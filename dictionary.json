@@ -3860,6 +3860,12 @@
       ],
       "is_array": true
     },
+    "observable_sources": {
+      "caption": "Observable Sources",
+      "description": "The source references indicating where the observable was seen.",
+      "type": "observable_source",
+      "is_array": true
+    },
     "occurrence_details": {
       "caption": "Occurrence Details",
       "description": "Details about where in the target entity the specified information was discovered. See specific usage.",

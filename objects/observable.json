@@ -15,6 +15,10 @@
       "description": "The observable value type name.",
       "requirement": "optional"
     },
+    "observable_sources": {
+      "description": "The source event/finding attributes where the observable was seen.",
+      "requirement": "optional"
+    },
     "type_id": {
       "description": "The observable value type identifier.",
       "enum": {
