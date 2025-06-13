@@ -1,0 +1,16 @@
+{
+  "caption": "Related Attribute",
+  "description": "The Related Attribute object provides a reference to another attribute in an event or finding.",
+  "extends": "object",
+  "name": "related_attribute",
+  "attributes": {
+    "event_uid": {
+      "description": "The unique identifier of the event/finding containing the related attribute. If the event/finding is in OCSF, then this value must be equal to <code>metadata.uid</code> in the corresponding event/finding. If left unspecified, it indicates the referenced event/finding is the root object.",
+      "requirement": "optional"
+    },
+    "json_path": {
+      "description": "The JSON path of the related attribute in the event/finding matching <code>event_uid</code>. For example: <code>evidences[2].device.network_interfaces[0].ip</code>",
+      "requirement": "required"
+    }
+  }
+}

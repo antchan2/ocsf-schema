@@ -3860,12 +3860,6 @@
       ],
       "is_array": true
     },
-    "observable_sources": {
-      "caption": "Observable Sources",
-      "description": "The source references indicating where the observable was seen.",
-      "type": "observable_source",
-      "is_array": true
-    },
     "occurrence_details": {
       "caption": "Occurrence Details",
       "description": "Details about where in the target entity the specified information was discovered. See specific usage.",
@@ -4705,6 +4699,12 @@
       "caption": "Related CWEs",
       "description": "Describes Common Weakness Enumeration <a target='_blank' href='https://cwe.mitre.org/'>(CWE)</a> entries that are related to an entity. See specific usage.",
       "type": "cwe",
+      "is_array": true
+    },
+    "related_attributes": {
+      "caption": "Related Attributes",
+      "description": "List of related event/finding attributes. See specific usage.",
+      "type": "related_attribute",
       "is_array": true
     },
     "related_events": {

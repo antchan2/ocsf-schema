@@ -5,18 +5,18 @@
   "name": "observable",
   "attributes": {
     "name": {
-      "description": "The full name of the observable attribute. The <code>name</code> is a pointer/reference to an attribute within the OCSF event data. For example: <code>file.name</code>.",
+      "description": "The full name of the observable attribute. The <code>name</code> is a pointer/reference to an attribute within the OCSF event data without array references. For example: <code>file.name</code>, <code>device.network_interfaces.ip</code>.",
       "requirement": "recommended"
     },
     "reputation": {
       "requirement": "optional"
     },
-    "type": {
-      "description": "The observable value type name.",
+    "related_attributes": {
+      "description": "List of event/finding attributes that are related to the observable. For example, when the observable appears in a finding and was sourced from several related events, this list can reference the events and corresponding attributes where the observable was originally seen.",
       "requirement": "optional"
     },
-    "observable_sources": {
-      "description": "The source event/finding attributes where the observable was seen.",
+    "type": {
+      "description": "The observable value type name.",
       "requirement": "optional"
     },
     "type_id": {
