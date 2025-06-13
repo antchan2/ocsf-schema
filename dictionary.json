@@ -4701,6 +4701,12 @@
       "type": "cwe",
       "is_array": true
     },
+    "related_attributes": {
+      "caption": "Related Attributes",
+      "description": "List of related event/finding attributes. See specific usage.",
+      "type": "related_attribute",
+      "is_array": true
+    },
     "related_events": {
       "caption": "Related Events/Findings",
       "description": "Describes events and/or other findings related to the finding as identified by the security product. Note that these events may or may not be in OCSF.",
